@@ -9,9 +9,14 @@ public class Bebida extends Produto
 {
     // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
     
-    public Bebida(String nome, double preco, int qtdDisponivel)
+    public Bebida(String nome, double preco, int qtdDisponivel, String imagem)
     {
         // inicializa variáveis de instância
-        super(nome, preco, qtdDisponivel);
+        super(nome, preco, qtdDisponivel, imagem);
+    }
+    
+    @Override
+    public String toString(){
+        return super.toString();
     }
 }

@@ -16,12 +16,13 @@ public abstract class Produto
     /**
      * Construtor para objetos da classe Produto
      */
-    public Produto(String nome, double preco, int qtd)
+    public Produto(String nome, double preco, int qtd, String imagem)
     {
         // inicializa variáveis de instância
         this.nome = nome;
         this.preco = preco;
         this.qtd = qtd;
+        this.imagem = imagem;
     }
     
     public String getNome()
@@ -49,6 +50,16 @@ public abstract class Produto
         this.qtd = qtd;    
     }
     
+    public String getImagem()
+    {
+        return this.imagem;
+    }
+    
+    public void setImagem()
+    {
+        this.imagem = imagem;
+    }
+    
     /*public boolean qtdDisponivel()
     {
         if(qtd > 0)
@@ -72,6 +83,7 @@ public abstract class Produto
         sb.append("Nome :").append(this.nome).append("\n");
         sb.append("Preço :").append(this.preco).append("\n");
         sb.append("Quantidde disponivel :").append(this.qtd).append("\n");
+        sb.append("Imagem :").append(this.imagem);
         
         return sb.toString();
     }

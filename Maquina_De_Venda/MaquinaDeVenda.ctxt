@@ -7,4 +7,6 @@ comment1.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ MaquinaDeVenda\r\n
 comment2.params=i
 comment2.target=void\ comprar(int)
 comment2.text=\r\n\ Um\ exemplo\ de\ um\ m\u00E9todo\ -\ substitua\ este\ coment\u00E1rio\ pelo\ seu\ pr\u00F3prio\r\n\ \r\n\ @param\ \ y\ \ \ um\ exemplo\ de\ um\ par\u00E2metro\ de\ m\u00E9todo\r\n\ @return\ \ \ \ \ a\ soma\ de\ x\ e\ y\ \r\n
-numComments=3
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4

@@ -12,9 +12,14 @@ public class Snack extends Produto
     /**
      * Construtor para objetos da classe Snack
      */
-    public Snack(String nome, double preco, int qtdDisponivel)
+    public Snack(String nome, double preco, int qtdDisponivel, String imagem)
     {
         // inicializa variáveis de instância
-        super(nome, preco, qtdDisponivel);
+        super(nome, preco, qtdDisponivel, imagem);
+    }
+    
+    @Override
+    public String toString(){
+        return super.toString();
     }
 }

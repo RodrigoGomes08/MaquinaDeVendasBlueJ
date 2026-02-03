@@ -51,5 +51,14 @@ public class MaquinaDeVenda
             }
         }
     }
+    
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("Nome :").append(this.utilizador).append("\n");
+        sb.append("Preço :").append(this.localizacao).append("\n");
+        
+        return sb.toString(); 
+    }
 }
 

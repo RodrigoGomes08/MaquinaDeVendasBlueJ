@@ -12,9 +12,14 @@ public class Doce extends Produto
     /**
      * Construtor para objetos da classe Doce
      */
-    public Doce(String nome, double preco, int qtdDisponivel)
+    public Doce(String nome, double preco, int qtdDisponivel, String imagem)
     {
         // inicializa variáveis de instância
-        super(nome, preco, qtdDisponivel);
+        super(nome, preco, qtdDisponivel, imagem);
+    }
+    
+    @Override
+    public String toString(){
+        return super.toString();
     }
 }

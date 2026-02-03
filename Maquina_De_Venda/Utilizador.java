@@ -45,6 +45,16 @@ public class Utilizador
             this.saldo = this.saldo - valorDescontar;
         }
     }
+    
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("Nome :").append(this.nome).append("\n");
+        sb.append("Preço :").append(this.email).append("\n");
+        sb.append("Saldo :").append(this.saldo).append("\n");
+        
+        return sb.toString(); 
+    }
 }
 
 

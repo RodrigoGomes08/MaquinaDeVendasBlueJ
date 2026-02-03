@@ -10,4 +10,6 @@ comment3.params=valorCarregar
 comment3.target=void\ carregarSaldo(double)
 comment4.params=valorDescontar
 comment4.target=void\ descontarSaldo(double)
-numComments=5
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6
