@@ -30,20 +30,22 @@ public class Utilizador
         return this.saldo;
     }
     
-    public void carregarSaldo(double valorCarregar)
+    public double carregarSaldo(double valorCarregar)
     {
         if(valorCarregar > 0)
         {
             this.saldo = this.saldo + valorCarregar;
         }
+        return saldo;
     }
     
-    public void descontarSaldo(double valorDescontar)
+    public double descontarSaldo(double valorDescontar)
     {
         if(valorDescontar <= this.saldo)
         {
             this.saldo = this.saldo - valorDescontar;
         }
+        return saldo;
     }
     
     @Override

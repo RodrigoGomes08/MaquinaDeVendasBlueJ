@@ -16,9 +16,10 @@ public class MaquinaDeVenda
     /**
      * Construtor para objetos da classe MaquinaDeVenda
      */
-    public MaquinaDeVenda(int id, ArrayList<Produto> produtos, String localizacao)
+    public MaquinaDeVenda(Utilizador utilizador, int id, ArrayList<Produto> produtos, String localizacao)
     {
         // inicializa variáveis de instância
+        this.utilizador = utilizador;
         this.id = id;
         this.produtos = produtos;
         this.localizacao = localizacao;
@@ -31,14 +32,14 @@ public class MaquinaDeVenda
      * @return     a soma de x e y 
      */
     
-    public void comprar(int i)
+    public double comprar(int i)
     {
         // Ver qual é o produto
         Produto produto = produtos.get(i);
         // Ver a quantidade do produto
         int quantidade = produto.getQtd();
         // Se houver quantidade disponivel para comprar então ver o preço e se o utilizador tem saldo para o comprar
-        if(quantidade >= 1){
+        if(produto.qtdDisponivel() == true){
             //Verificr o preço do produto
             double preco = produto.getPreco();
             // Verificar o saldo do Utilizador
@@ -50,6 +51,7 @@ public class MaquinaDeVenda
                 utilizador.descontarSaldo(preco);
             }
         }
+        return this.utilizador.getSaldo();
     }
     
     @Override

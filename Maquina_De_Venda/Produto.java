@@ -60,15 +60,14 @@ public abstract class Produto
         this.imagem = imagem;
     }
     
-    /*public boolean qtdDisponivel()
+    public boolean qtdDisponivel()
     {
-        if(qtd > 0)
+        if(qtd >= 1)
         {
             return true;
         }
         return false;   
     }
-    */
    
     public int diminuirQtd()
     {
